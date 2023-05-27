@@ -1,0 +1,356 @@
+:root {
+    --color_red: #FF0000;
+    --color_orange: #FF7C33;
+    --color_white: #FFFFFF;
+    --color_black: #171A1A;
+    --color_gray: #D9D9D9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    border-bottom: 2px solid black;
+}
+.logo{
+    display: grid;
+    grid-template-columns: 60px 5fr 1fr;
+    grid-template-rows: 60px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 5%;
+    column-gap: 20px;
+}
+.logo img{
+    width: 120%;
+    height: 120%;
+}
+.logo .menu{
+    padding-left: 200px;
+    width: 80%;
+}
+.logo .menu nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    font-size: 16px;
+    font-weight: medium;
+}
+.logo .menu nav ul li a{
+    display: block;
+    text-align: center;
+    height: 120%;
+    transition: all 0.6s ease;
+}
+.logo .menu nav ul li a:hover{
+    color: var(--color_orange);
+    background-color: var(--color_white);
+}
+.logo .links{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: right;
+}
+.logo .links a i{
+    font-size: 23px;
+}
+
+main{
+    text-align: center;
+}
+main h1{
+    padding-top: 60px;
+    padding-bottom: 81px;
+}
+
+.center{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.left{
+    display: grid;
+    grid-template-rows: 200px 1000px;
+}
+.spb{
+    width: 651px;
+    height: 164px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.spb h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 425px;
+    font-size: 20px;
+}
+.trip{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.one{
+    width: 141px;
+    height: 89px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.one:hover{
+    background-color: var(--color_orange);
+    color: white;
+}
+.one p:first-child{
+    padding-top: 15px;
+}
+.one p{
+    text-align: left;
+    padding-left: 8px;
+}
+.one p:last-child{
+    padding-bottom: 30px;
+    filter: brightness(50%)
+}
+.em{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 651px;
+    height: 901px;
+    font-size: 14px;
+    display: grid;
+    grid-template-rows: 120px 80px 80px 80px 80px 80px 210px 110px;
+}
+.em input{
+    width: 575px;
+    height: 36px;
+}
+.ct{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.ct input{
+    width: 277px;
+}
+.t{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.t input{
+    width: 180px;
+}
+.email{
+    padding-top: 36px;
+}
+.cm input{
+    height: 74px;
+}
+.email p{
+    padding-right: 535px;
+    padding-bottom: 8px;
+}
+.fio p{
+    padding-right: 545px;
+    padding-bottom: 8px;
+}
+.tel p{
+    padding-right: 515px;
+    padding-bottom: 8px;
+}
+.city p{
+    padding-right: 240px;
+    padding-bottom: 8px;
+}
+.country p{
+    padding-right: 230px;
+    padding-bottom: 8px;
+}
+.street p{
+    padding-right: 535px;
+    padding-bottom: 8px;
+}
+
+.home p{
+    padding-right: 150px;
+    padding-bottom: 8px;
+}
+.kvar p{
+    padding-right: 120px;
+    padding-bottom: 8px;
+}
+.index p{
+    padding-right: 130px;
+    padding-bottom: 8px;
+}
+.cm p{
+    padding-bottom: 8px;
+    padding-right: 440px;
+}
+.right{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 457px;
+    height: 649px;
+}
+.nk{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    padding-top: 26px;
+    padding-bottom: 18px;
+}
+
+.nk h6{
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 16px;
+}
+.price{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding-bottom: 16px;
+}
+.price p:first-child{
+    text-align: left;
+}
+.price p:last-child{
+    text-align: right;
+    color: var(--color_red);
+}
+.size{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.size p:first-child{
+    text-align: left;
+}
+.size p:last-child{
+    text-align: right;
+    color: var(--color_red);
+}
+.size form button{
+    width: 48px;
+    height: 22px;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+}
+.txt{
+    padding-top: 16px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 16px;
+}
+.tx1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 20px;
+}
+.tx2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 20px;
+}
+.tx3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 24px;
+}
+.tx1 p:last-child{
+    color: var(--color_red);
+}
+.tx2 p:last-child{
+    color: var(--color_red);
+}
+.tx3 p:last-child{
+    color: var(--color_red);
+}
+.btn{
+    padding-top: 30px;
+}
+.btn form button{
+    width: 289px;
+    height: 81px;
+    font-size: 24px;
+    color: white;
+    background-color: var(--color_orange);
+    border: 3px solid var(--color_orange);
+    border-radius: 10px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.btn form button:hover{
+    background-color: var(--color_white);
+    border: 3px solid var(--color_orange);
+    border-radius: 10px;
+    color: black;
+}
+footer{
+    padding-left: 76px;
+    padding-right: 76px;
+    height: 350px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.first{
+    width: 180px;
+    padding-top: 11px;
+}
+.first .first-items p{
+    padding-top: 13px;
+}
+.second{
+    padding-top: 40px;
+    text-align: center;
+}
+.second .second-content p{
+    padding-top: 30px;
+}
+.second .second-items{
+    padding-top: 30px;
+}
+
+.second .second-items p{
+    padding-top: 30px;
+}
+.third{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.third nav ul{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 28px;
+}
+
+.third nav ul li:hover{
+    color: var(--color_orange);
+}
+.fourth{
+    padding-top: 40px;
+    text-align: right;
+}
+.fourth .fourth-content{
+    padding-left: 244px;
+}
+.fourth .fourth-content p{
+    padding-top: 11px;
+}
+.fourth .fourth-items{
+    padding-right: 80px;
+}
